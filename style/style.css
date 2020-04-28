@@ -65,19 +65,22 @@ div#viewport {
     grid-area: 1 / 1 / 2 / 2;  
 }
 #logo {
+    display: flex;
     border: 0;
     height: 233px;
     width: 550px;
     margin-top: 89px;
     padding: 35px;
+    justify-content: center;
+    align-items: flex-start;
 }
 #main {
     display: flex;
     width: 100%;
 }
 .center {
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    margin: 0 auto;
 }
 
 .app {
@@ -144,6 +147,10 @@ div#googler {
     background: #fff;
     width: 584px;
 }
+div#googler:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
 #mag-glass{
     padding-left: 10px;
     padding-top: 11px;
@@ -168,4 +175,9 @@ footer {
 .right {
     float: right;
     padding-right: 20px;
+}
+#submit-search {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
 }
