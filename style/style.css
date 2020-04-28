@@ -101,7 +101,7 @@ a:link {
 a:hover, a:focus {
     text-decoration:underline;
 }
-input {
+input[type="submit"] {
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-radius: 4px;
@@ -122,6 +122,12 @@ input[type="submit"]:hover {
     color: #222;
     border: 1px solid #c6c6c6;
 }
+input[type="text"] {
+    idth: 480px;
+    font-size: 16px;
+    margin-top: 9px;
+    border: none;
+}
 div#search-form {
     width: 100%;
     position: absolute;
@@ -137,6 +143,12 @@ div#googler {
     margin: 0 auto;
     background: #fff;
     width: 584px;
+}
+#mag-glass{
+    padding-left: 10px;
+    padding-top: 11px;
+    color: #9AA0A6;
+    fill: currentColor;
 }
 footer {
     bottom: 0;
