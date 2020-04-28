@@ -3,8 +3,12 @@ body {
     color: rgb(34, 34, 34);
     font-size: 13px;
     font-family: arial, sans-serif;
+    width: 1vw;
 }
-
+svg {
+    height: 40px;
+    width: 40px;
+}
 div#viewport {
     position: absolute;
     top: 0;
@@ -24,7 +28,6 @@ div#viewport {
     display: flex;
     flex-direction: row;
     flex-basis: auto;
-
     padding-right: 30px;
     align-items: center;
     margin-top: 10px;
@@ -43,11 +46,11 @@ div#viewport {
 .profile {
     height: 40px;
     width: 40px;
-   opacity: 1.0;
-   padding-left: 15px;
-   justify-content: right;
-   display: grid;
-   grid-template-rows: 40px;
+    opacity: 1.0;
+    padding-left: 15px;
+    justify-content: right;
+    display: grid;
+    grid-template-rows: 40px;
 }
 #profile-image {
     height: 32px;
@@ -59,17 +62,14 @@ div#viewport {
     align-self: center;
 }
 #gpath {
-    grid-area: 1 / 1 / 2 / 2;
-    
+    grid-area: 1 / 1 / 2 / 2;  
 }
 #logo {
     border: 0;
     height: 233px;
     width: 550px;
-    text-align: -webkit-center;
     margin-top: 89px;
     padding: 35px;
-    
 }
 #main {
     display: flex;
@@ -127,7 +127,16 @@ div#search-form {
     position: absolute;
     top: 269px;
     margin-top: 0px;
-    text-align: -webkit-center;
+}
+div#googler {
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    background: #fff;
+    width: 584px;
 }
 footer {
     bottom: 0;
@@ -140,5 +149,11 @@ footer {
     line-height: 40px;
     background: #f2f2f2;
     border-top: 1px solid #e4e4e4;
-
+}
+.left {
+    padding-right: 20px;
+}
+.right {
+    float: right;
+    padding-right: 20px;
 }
